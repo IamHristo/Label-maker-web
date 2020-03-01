@@ -91,7 +91,14 @@ function input(){
     var list = document.getElementsByClassName("col-xs-6");
     list[a].getElementsByClassName("lbname")[0].innerHTML = name;
     
-    list[a].getElementsByClassName("lbprice")[0].innerHTML = price + " лв";;
+    var p1 = price.substring(0,2);
+    var p2 = price.substring(2,4);
+     
+    list[a].getElementsByClassName("lbprice")[0].innerHTML = p1;
+    
+    list[a].getElementsByClassName("lbpricedecimal")[0].innerHTML = p2;
+    
+    list[a].getElementsByClassName("lbpricename")[0].innerHTML = " лв";
     
     /*
     console.log(typeof curIdx);

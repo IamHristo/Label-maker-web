@@ -1763,32 +1763,33 @@ hr {
     border-style: solid;
 }
 #Tag-1{
-   margin-top: 35px;
+   margin-top: 55px;
 }
 
 #Tag-2{
-   margin-top: 25px;
+   margin-top: 45px;
    width: 60%;
    float: left;
 }
 
 #Tag-3{
    margin-right: 10px;
-   margin-top: 35px;
+   margin-top: 78px;
    width: 40%;
    float: right;
+   
 }
 .brand{
     position: relative;
-    height:150px;
-    line-height: 2.9;
+    height:14.22em;
+    line-height:1.4;
     overflow:hidden; 
     word-wrap: break-word;
 }
 #lines{
     position: absolute;
     top:0px;
-    height: 100%;
+    height: 14.22em;
     width: 100%;
 }
 .demo {  
@@ -1808,7 +1809,34 @@ input[type=text], input[type=number] {
 
 .lbprice{
     position:absolute;
-    left: 220px;
-    bottom: 6px;
+    left: 150px;
+    bottom: 0px;
+    top: 100px;
 }
 
+.lbname{
+    position: relative;
+    font-size: 45px;
+    font-weight: bold;
+     
+}
+
+.lbprice::first-letter {
+  font-size: 650%;
+}
+
+.lbpricedecimal {
+    position:absolute;
+    left: 230px;
+    bottom: 0px;
+    top: 120px;
+    font-size: 300%;
+}
+.lbpricename {
+    position:absolute;
+    left: 250px;
+    bottom: 0px;
+    top: 180px;
+    font-size: 170%;
+    font-weight: bold;
+}
