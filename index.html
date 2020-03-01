@@ -26,7 +26,7 @@
 	<![endif]-->
 
 </head>
-<body>
+<body id="testdiv">
 	<!-- Page Preloder -->
 	<div id="preloder">
 		<div class="loader"></div>
@@ -135,7 +135,8 @@
   	</form>
 </div>
    
-    
+    <a onclick="genPDF()" href="">Download PDF</a> 
+    <h4 onclick="window.print();"> Print </h4>
 </form>
 </div>
 <script>
@@ -151,7 +152,7 @@ window.onclick = function(event) {
 </script>
     
     <!--=========== TEST =======-->
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
     <!-- scripts -->
 
 <!-- stats.js -->
@@ -184,5 +185,6 @@ window.onclick = function(event) {
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
     <script src="js/moda.js"></script>
+    <script src="mt.js"></script>
     </body>
 </html>
