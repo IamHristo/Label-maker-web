@@ -15,6 +15,7 @@ body {
 	font-family: 'Roboto', sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+    
 }
 
 h1,
@@ -1756,6 +1757,7 @@ button:hover {
     border-color: black;
     height: 14.22em;
     
+    
 }
 
 hr {
@@ -1793,8 +1795,10 @@ hr {
     width: 100%;
 }
 .demo {  
-   
   margin: 5px; 
+  
+    
+  
   
 }
 
@@ -1839,4 +1843,20 @@ input[type=text], input[type=number] {
     top: 180px;
     font-size: 170%;
     font-weight: bold;
+}
+
+#testdiv {
+    opacity: 0.5;
+    z-index: -1;
+    position: absolute;
+    top: 15px;
+    right: 55px;
+    height: 100%;
+    width: 100%;
+    background-image: url(/img/logofinal-1-tb.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    transform: rotate(30deg);
 }

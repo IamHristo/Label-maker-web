@@ -4,7 +4,9 @@
     border-color: black;
     height: 151px;
     width: 226px;
-    
+    border: 2px solid black;
+  padding: 25px;
+
 }
 
 hr {
@@ -169,3 +171,4 @@ span.psw {
     height: 100%;
     width: 100%;
 }
+
