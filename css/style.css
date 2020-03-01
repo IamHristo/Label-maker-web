@@ -1839,4 +1839,5 @@ input[type=text], input[type=number] {
     top: 180px;
     font-size: 170%;
     font-weight: bold;
+    background-color: red;
 }
