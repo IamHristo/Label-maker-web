@@ -1825,7 +1825,7 @@ input[type=text], input[type=number] {
      
 }
 
-.lbprice::first-letter {
+.lbprice{
   font-size: 650%;
 }
 

@@ -90,10 +90,21 @@ function input(){
     
     var list = document.getElementsByClassName("col-xs-6");
     list[a].getElementsByClassName("lbname")[0].innerHTML = name;
+    var c;
+    if(price/10>=1){
+       c=3;
+        list[a].getElementsByClassName("lbprice")[0].style.left = "120px";
+    }
+    else{
+        c=2;
+        list[a].getElementsByClassName("lbprice")[0].style.left = "170px";
+    }
     
-    var p1 = price.substring(0,2);
-    var p2 = price.substring(2,4);
-     
+    var p1 = price.substring(0,c);
+    var p2 = price.substring(c,c+2);
+    
+    
+    
     list[a].getElementsByClassName("lbprice")[0].innerHTML = p1;
     
     list[a].getElementsByClassName("lbpricedecimal")[0].innerHTML = p2;

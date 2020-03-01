@@ -20,6 +20,11 @@ function printPDF(){
         var printButton = document.getElementById("btn");
         //Set the print button visibility to 'hidden' 
         printButton.style.visibility = 'hidden';
+        var x = document.querySelectorAll(".panel");
+        var i;
+        for(i=0; i<x.length;i++){
+            x[i].style.background = "none";
+        }
         //Print the page content
         window.print()
         //Set the print button to 'visible' again 
