@@ -1779,7 +1779,7 @@ hr {
    width: 40%;
    float: right;
 }
-#brand{
+.brand{
     position: relative;
     height:150px;
     line-height: 2.9;
@@ -1792,7 +1792,7 @@ hr {
     height: 100%;
     width: 100%;
 }
-#demo {  
+.demo {  
   margin-left: 15px;;
   width: 100%;
   padding: 10px;
@@ -1808,7 +1808,7 @@ input[type=text], input[type=number] {
   box-sizing: border-box;
 }
 
-#lbprice{
+.lbprice{
     position:absolute;
     left: 220px;
     bottom: 6px;

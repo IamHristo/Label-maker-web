@@ -82,12 +82,47 @@ function showLoginHide(){
     document.getElementById("id01").style.display = 'none';
 }
 
-
+var a;
 function input(){
     showAlert();
+    var name = document.getElementById("bname").value;
+    var price = document.getElementById("price").value;
+    
+    var list = document.getElementsByClassName("col-xs-6");
+    list[a].getElementsByClassName("lbname")[0].innerHTML = name;
+    
+    list[a].getElementsByClassName("lbprice")[0].innerHTML = price + " лв";;
+    
+    /*
+    console.log(typeof curIdx);
     var name = document.getElementById("bname").value;
     document.getElementById("lbname").innerHTML = name;
     var price = document.getElementById("price").value;
     document.getElementById("lbprice").innerHTML = price + " лв";
-    
+    */
 }
+
+
+$('.panel').on("click",function() { 
+    $(this).css('background', 'green'); 
+});
+/*
+$(document).ready(function(){
+  $(".col-xs-6").click(function(){
+    alert($(".col-xs-6").index());
+  });
+});
+
+$(document).ready(function(){
+  $(".probata").click(function(){
+    alert($(this).index());
+  });
+});
+*/
+
+$(".col-xs-6").bind("click", function(){
+    var divs = $(".col-xs-6");
+    var curIdx = divs.index($(this));
+    
+    a=curIdx;
+});
