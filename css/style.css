@@ -1853,7 +1853,7 @@ input[type=text], input[type=number] {
     right: 55px;
     height: 100%;
     width: 100%;
-    background-image: url(/img/logofinal-1-tb.png);
+    background-image: url(../img/logofinal-1-tb.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
