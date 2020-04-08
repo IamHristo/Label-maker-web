@@ -1862,4 +1862,14 @@ input[type=text], input[type=number] {
     transform: rotate(30deg);
 }
 
+#price1 {
+    width: 30%;
+}
+
+#price2 {
+    transform:scale(1.5);
+    text-align: center;
+}
+
+
 

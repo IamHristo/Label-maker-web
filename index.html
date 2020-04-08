@@ -450,17 +450,23 @@
       		<input id="bname" type="text" placeholder="Въведете име на продукта" name="uname" maxlength="21" required >
       		<label for="psw"><b class="login">Цена</b></label>
       		<input id="price" type="number" step=".01" placeholder="Въведете цена" name="psw" autocomplete="new-password" required>
+            <label for="psw"><b class="login">Процент печалба</b></label>
+            <input id="price1" type="number" step="1" value = "25" min="0" max="50" placeholder="Въведете процент печалба" name="psw" autocomplete="new-password" required>
+            <label class="login">
+        	<input id="price2" type="checkbox" checked="checked" name="remember">Цената е с включено ДДС 
+      		</label>
       		<button onclick="input()" type="submit" >Готово</button>
       		<label class="login">
         	<input type="checkbox" checked="checked" name="remember"> Запомни продукта
       		</label>
+            
     	</div>
     	
   	</form>
 </div>
    
     
-    <button id="btn" type="button" onclick="printPDF()">Принтирай</button>
+    <button id="btn" type="button" onclick="checkAll();">Принтирай</button>
     
 </form>
 </div>

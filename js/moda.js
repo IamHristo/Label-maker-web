@@ -81,13 +81,37 @@ function showLogin(){
 function showLoginHide(){
     document.getElementById("id01").style.display = 'none';
 }
-
 var a;
+function checkAll() {
+    var list = document.getElementsByClassName("col-xs-6");
+    var listLength = list.length;
+    var count=0;
+    console.log(listLength);
+    for(var i=0; i<listLength;i++){
+        var nameString = list[i].getElementsByClassName("lbname")[0].textContent;
+            console.log(nameString);
+        if(nameString.length==0 || nameString == "Примерно име марка" ){
+            list[i].getElementsByClassName("panel-default")[0].style.backgroundColor = "red";
+            count++;
+        }
+        
+        }
+    if(count>=1){
+            alert("Имате " + count + " непопълнени етикета!");
+        }
+    else{
+        printPDF();
+    }
+}
+
+
+
 function input(){
     showAlert();
     var name = document.getElementById("bname").value;
     var price = document.getElementById("price").value;
-    
+    var price2 = document.getElementById("price1").value;
+    var dds = document.getElementById("price2");
     var list = document.getElementsByClassName("col-xs-6");
     list[a].getElementsByClassName("lbname")[0].innerHTML = name;
     var c;
@@ -100,8 +124,22 @@ function input(){
         list[a].getElementsByClassName("lbprice")[0].style.left = "170px";
     }
     
+    var p3 = 1 +"."+price2;
+    if(dds.checked==true){
+        var p4 = price * p3;
+        console.log("yes");
+    }
+    else{
+        var p4 = price * p3 * 1.20;
+        console.log("no");
+    }
+    
+    var p5 = p4.toFixed(2);
+    price = p5;
+    console.log(price);
     var p1 = price.substring(0,c);
-    var p2 = price.substring(c,c+2);
+    var p2 = price.substring(c,c+3);
+    
     
     
     
@@ -120,9 +158,25 @@ function input(){
     */
 }
 
+var element;
+//Change color of DIV
+function redColor(){
+console.log(document.getElementById("bname").value); 
+var nameLength = document.getElementById("bname").value.length;
+console.log(nameLength);   
+    
+    if(nameLength == 0){
+       console.log($("#bname").length); 
+    $(element).css('background', 'red'); 
+    }
+    
+    //if ($("#bname").val().replace(/^\s+|\s+$/g, //"").length != 0);
+
+}
 
 $('.panel').on("click",function() { 
     $(this).css('background', 'green'); 
+    element=$(this);
 });
 /*
 $(document).ready(function(){
