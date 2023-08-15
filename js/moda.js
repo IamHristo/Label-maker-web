@@ -96,10 +96,13 @@ function checkAll() {
         }
         
         }
-    if(count>=1){
-            alert("Имате " + count + " непопълнени етикета!");
-        }
-    else{
+
+    if(count>=1)
+    {
+        alert("Имате " + count + " непопълнени етикета!");
+    }
+    else
+    {
         printPDF();
     }
 }
